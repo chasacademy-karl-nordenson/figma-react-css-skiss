@@ -1,7 +1,6 @@
 import styles from "./ProductImages.module.css"
 import React from "react"    
 
-
 function ProductImages () {
 
     return (
