@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Lato:wght@300&family=Tilt+Prism&display=swap');
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    height: 426px;
+    left: 783px;
+    top: 265px;
+    padding-top: 180px;
+    padding-bottom: 209px;
+    padding-left: 125px;
+    
+}
+
+.sneakerCompany {
+
+    height: 16px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 16px/2 - 205px);
+    
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    color: #FF7E1B;
+    margin: 0;
+}
+
+.productName {
+    height: 96px;
+left: 0%;
+right: 0%;
+top: calc(50% - 96px/2 - 125px);
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 48px;
+/* or 109% */
+margin: 0;
+margin-top: 24px;
+
+
+color: #1D2026;
+}
+
+.productDesc {
+    height: 78px;
+left: 0%;
+right: 0%;
+top: calc(50% - 78px/2 - 6px);
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+margin-top: 32px;
+
+
+color: #69707D;
+
+}
+
+.priceInfo {
+    display: flex;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+/*     height: 35px; */
+left: 0%;
+right: 42.77%;
+top: calc(50% - 35px/2 - 12.5px);
+margin: 0;
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 35px;
+/* identical to box height */
+
+
+color: #1D2026;
+}
+
+.currentPrice {
+    margin: 0;
+    height: 35px;
+left: 0%;
+right: 42.77%;
+top: calc(50% - 35px/2 - 12.5px);
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 35px;
+/* identical to box height */
+
+
+color: #1D2026;
+
+}
+
+.priceBefore {
+    height: 26px;
+left: 0%;
+right: 65.32%;
+top: calc(50% - 26px/2 + 21px);
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+text-decoration-line: line-through;
+
+color: #B6BCC8;
+    margin-top: 3px;
+}
+
+.sale {
+    margin: 0;
+    margin-left: 31px;
+    height: 20px;
+    left: 15.69%;
+    right: 21.57%;
+    top: calc(50% - 20px/2 + 3.5px);
+    
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FF7E1B;
+
+
+color: #FF7E1B;
+}
+
+
+
+.counterAndAddCart {
+    display: flex;
+}
+
+.productButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 157px;
+    height: 56px;
+
+
+    background: #F6F8FD;
+    border-radius: 10px;
+}
+
+.decrement {
+
+    font-size: 1rem;
+    color: #FF7E1B;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    font-family: 'Kumbh Sans';
+    font-weight: 1000;
+
+}
+
+.increment {
+    font-size: 1rem;
+    font-weight: 1000;
+    padding-right: 14px;
+
+    color: #FF7E1B;
+
+
+
+}
+
+.decrement .increment {
+    font-family: 'system-ui';
+
+
+}
+
+.count {
+    font-family: 'Kumbh Sans';
+
+}
+
+/* .rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 56px;
+    left: 173px;
+    top: 370px;
+    background: #FF7E1B;
+} */
+
+/* .addToCart {
+    height: 20px;
+    left: 27.73%;
+    right: 0%;
+    top: calc(50% - 20px/2 + 4.5px);
+    
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    
+    
+    color: #FFFFFF;
+} */
+
+.addImg {
+    width: 272px;
+height: 56px;
+left: 173px;
+top: 370px;
+}

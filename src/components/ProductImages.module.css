@@ -1,0 +1,19 @@
+.imageContainer {
+    margin-top: 136px;
+    margin-left: 213px;
+    width: 445px;
+    height: 565px;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+
+
+}
+
+.thumbnails img {
+    height: 88px;
+    width: 88px;
+}
