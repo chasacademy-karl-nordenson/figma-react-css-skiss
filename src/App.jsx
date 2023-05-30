@@ -15,7 +15,7 @@ function App() {
           <ProductInfo/>
         </div>
       </div>
-    </CartProvider>
+   </CartProvider>
   )
 }
 
