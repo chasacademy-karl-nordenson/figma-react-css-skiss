@@ -59,3 +59,20 @@ color: #69707D;
     margin-left: 48px;
 }
 
+.cartCount {
+background: #FF7E1B;
+border-radius: 6.5px;
+left: 31.58%;
+right: 31.58%;
+top: calc(50% - 10px/2 + 1.5px);
+height: 14px;
+
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 12px;
+
+color: #FFFFFF;
+}

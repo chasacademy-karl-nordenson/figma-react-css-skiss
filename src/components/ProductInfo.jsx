@@ -8,9 +8,13 @@ function Counter({ count, setCount }) {
 
   return (
     <div className={styles.productButtons}>
-      <span className={styles.decrement} onClick={decrement}>-</span>
+      <span className={styles.decrement} onClick={decrement}>
+        -
+      </span>
       <h3 className={styles.count}>{count}</h3>
-      <span className={styles.increment} onClick={increment}>+</span>
+      <span className={styles.increment} onClick={increment}>
+        +
+      </span>
     </div>
   );
 }
@@ -20,10 +24,11 @@ function ProductInfo() {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
+    const quantity = count > 0 ? count : 1; // Use the count value if it is greater than 0, otherwise default to 1
     addToCart({
       name: "Fall Limited Edition Sneakers",
       price: 125.0,
-      count: count
+      quantity: quantity // Use the calculated quantity
     });
     setCount(0);
   };

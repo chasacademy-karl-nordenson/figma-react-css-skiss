@@ -11,6 +11,7 @@ border-radius: 10px;
 }
 
 .cartItem {
+    display: flex;
     height: 26px;
     left: 0%;
     right: 0.47%;
@@ -64,7 +65,7 @@ text-align: center;
 color: #69707D;
 }
 
-.thumbnail {
+/* .thumbnail {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -74,4 +75,45 @@ top: 35.94%;
 bottom: 44.53%;
 
 border-radius: 4px;
+} */
+
+.productInfo{
+    display: flex;
+/*     flex-direction: column; */
+    position: absolute;
+    width: 312px;
+    height: 52px;
+    left: 24px;
+    top: 92px;
+
 }
+
+.checkout {
+    width: 312px;
+    height: 56px;
+    padding: 168px 24px 32px 24px;
+}
+
+.rectangle {
+    width: 50px;
+    height: 50px;
+/*     margin-bottom: 50px; */
+    margin: 0px 16px 114px 0px;
+}
+
+.productName {
+/*     white-space: nowrap; */
+}
+
+.totalPrice {
+    font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+
+color: #1D2026;
+}
+

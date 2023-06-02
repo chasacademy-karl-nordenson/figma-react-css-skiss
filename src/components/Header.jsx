@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import CartDropdown from "./CartDropdown";
 import { useCart } from "../CartContext";
@@ -6,6 +6,12 @@ import { useCart } from "../CartContext";
 function Header() {
   const { cart } = useCart();
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    const count = cart.reduce((total, item) => total + item.quantity, 0);
+    setCartCount(count);
+  }, [cart]);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
@@ -34,7 +40,7 @@ function Header() {
           alt="cart"
           onClick={toggleDropdown}
         />
-        {cart.length > 0 && <span>{cart.length}</span>}
+        {cartCount > 0 && <span className={styles.cartCount}>{cartCount}</span>}
         <img
           className={styles.account}
           src="./src/images/Oval.png"

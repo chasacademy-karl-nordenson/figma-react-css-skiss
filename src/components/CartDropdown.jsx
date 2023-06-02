@@ -8,19 +8,21 @@ function CartDropdown() {
   return (
     <div className={styles.cartDropdown}>
       {cart.length === 0 ? (
-        <div>
-          <span className={styles.cartMessage}>Cart</span>
-          <span className={styles.emptyMessage}>Your cart is empty</span>
-        </div>
+            <span className={styles.emptyMessage}>Your cart is empty</span>
       ) : (
         cart.map((product) => (
-          <div>
-            <span className={styles.cartMessage}>Cart</span>
-            <img className={styles.thumbnail} src="./src/images/Rectangle.png" alt="product image" />
-            <div key={product.id} className={styles.cartItem}>
+          <div key={product.id} className={styles.cartItem}>
+
+            <div className={styles.productInfo}>
+              <img className={styles.rectangle} src="./src/images/rectangle.png" alt="" />
               <span className={styles.productName}>{product.name}</span>
-              <span className={styles.productPrice}>{product.price}</span>
-            </div>
+              <span>
+                ${product.price} x {product.quantity}
+              </span>
+              <span className={styles.totalPrice}>{product.price * product.quantity}</span>
+            </div> 
+
+            <img className={styles.checkout} src="./src/images/checkout.png" alt="" />
           </div>
         ))
       )}
