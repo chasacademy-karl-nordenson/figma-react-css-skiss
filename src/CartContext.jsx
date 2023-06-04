@@ -20,11 +20,11 @@ export const CartProvider = ({ children }) => {
   const addToCart = (product) => {
     const existingProduct = cart.find((item) => item.id === product.id);
     if (existingProduct) {
-      existingProduct.quantity += product.quantity; // Add the quantity to the existing product
-      setCart([...cart]); // Update the cart state
+      existingProduct.quantity += product.quantity; 
+      setCart([...cart]); 
     } else {
-      product.quantity = product.quantity; // Set the quantity for the new product
-      setCart([...cart, product]); // Add the new product to the cart
+      product.quantity = product.quantity; 
+      setCart([...cart, product]); 
     }
   };
 

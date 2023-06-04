@@ -24,11 +24,11 @@ function ProductInfo() {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    const quantity = count > 0 ? count : 1; // Use the count value if it is greater than 0, otherwise default to 1
+    const quantity = count > 0 ? count : 1; 
     addToCart({
       name: "Fall Limited Edition Sneakers",
       price: 125.0,
-      quantity: quantity // Use the calculated quantity
+      quantity: quantity 
     });
     setCount(0);
   };
